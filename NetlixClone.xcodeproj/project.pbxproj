@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,15 @@
 		C99C08FC2564D276002B411F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C08FB2564D276002B411F /* ContentView.swift */; };
 		C99C08FE2564D277002B411F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99C08FD2564D277002B411F /* Assets.xcassets */; };
 		C99C09012564D277002B411F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99C09002564D277002B411F /* Preview Assets.xcassets */; };
+		C99C090B2564EA4C002B411F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C090A2564EA4C002B411F /* HomeView.swift */; };
+		C99C09102564EBEC002B411F /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C99C090F2564EBEC002B411F /* KingfisherSwiftUI */; };
+		C99C09142564EC53002B411F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C09132564EC53002B411F /* Movie.swift */; };
+		C99C09182564ED02002B411F /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C09172564ED02002B411F /* StandardHomeMovie.swift */; };
+		C99C091B2564ED83002B411F /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C091A2564ED83002B411F /* GlobalHelper.swift */; };
+		C99C091E2564F318002B411F /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C091D2564F318002B411F /* HomeVM.swift */; };
+		C99C094625679290002B411F /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C094525679290002B411F /* TopMoviePreview.swift */; };
+		C99C094A25679D47002B411F /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C094925679D47002B411F /* SmallVerticalButton.swift */; };
+		C99C094D2567A500002B411F /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C094C2567A500002B411F /* WhiteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,14 @@
 		C99C08FD2564D277002B411F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C99C09002564D277002B411F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C99C09022564D277002B411F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C99C090A2564EA4C002B411F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C99C09132564EC53002B411F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		C99C09172564ED02002B411F /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
+		C99C091A2564ED83002B411F /* GlobalHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelper.swift; sourceTree = "<group>"; };
+		C99C091D2564F318002B411F /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		C99C094525679290002B411F /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
+		C99C094925679D47002B411F /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
+		C99C094C2567A500002B411F /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99C09102564EBEC002B411F /* KingfisherSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +70,17 @@
 		C99C08F82564D276002B411F /* NetlixClone */ = {
 			isa = PBXGroup;
 			children = (
+				C99C09442567926E002B411F /* TopMovie */,
+				C99C09122564EC43002B411F /* Movie */,
+				C99C09092564EA39002B411F /* HomeView */,
 				C99C08F92564D276002B411F /* NetlixCloneApp.swift */,
 				C99C08FB2564D276002B411F /* ContentView.swift */,
 				C99C08FD2564D277002B411F /* Assets.xcassets */,
 				C99C09022564D277002B411F /* Info.plist */,
 				C99C08FF2564D277002B411F /* Preview Content */,
+				C99C091A2564ED83002B411F /* GlobalHelper.swift */,
+				C99C094925679D47002B411F /* SmallVerticalButton.swift */,
+				C99C094C2567A500002B411F /* WhiteButton.swift */,
 			);
 			path = NetlixClone;
 			sourceTree = "<group>";
@@ -67,6 +91,32 @@
 				C99C09002564D277002B411F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C99C09092564EA39002B411F /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				C99C090A2564EA4C002B411F /* HomeView.swift */,
+				C99C091D2564F318002B411F /* HomeVM.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		C99C09122564EC43002B411F /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				C99C09132564EC53002B411F /* Movie.swift */,
+				C99C09172564ED02002B411F /* StandardHomeMovie.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		C99C09442567926E002B411F /* TopMovie */ = {
+			isa = PBXGroup;
+			children = (
+				C99C094525679290002B411F /* TopMoviePreview.swift */,
+			);
+			path = TopMovie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +135,9 @@
 			dependencies = (
 			);
 			name = NetlixClone;
+			packageProductDependencies = (
+				C99C090F2564EBEC002B411F /* KingfisherSwiftUI */,
+			);
 			productName = NetlixClone;
 			productReference = C99C08F62564D276002B411F /* NetlixClone.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +165,9 @@
 				Base,
 			);
 			mainGroup = C99C08ED2564D276002B411F;
+			packageReferences = (
+				C99C090E2564EBEC002B411F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C99C08F72564D276002B411F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +194,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99C091B2564ED83002B411F /* GlobalHelper.swift in Sources */,
+				C99C090B2564EA4C002B411F /* HomeView.swift in Sources */,
+				C99C091E2564F318002B411F /* HomeVM.swift in Sources */,
 				C99C08FC2564D276002B411F /* ContentView.swift in Sources */,
+				C99C09182564ED02002B411F /* StandardHomeMovie.swift in Sources */,
+				C99C094625679290002B411F /* TopMoviePreview.swift in Sources */,
+				C99C09142564EC53002B411F /* Movie.swift in Sources */,
 				C99C08FA2564D276002B411F /* NetlixCloneApp.swift in Sources */,
+				C99C094A25679D47002B411F /* SmallVerticalButton.swift in Sources */,
+				C99C094D2567A500002B411F /* WhiteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +392,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C99C090E2564EBEC002B411F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C99C090F2564EBEC002B411F /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C99C090E2564EBEC002B411F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C99C08EE2564D276002B411F /* Project object */;
 }
