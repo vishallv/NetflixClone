@@ -13,6 +13,7 @@ struct StandardHomeMovie: View {
         KFImage(movie.thumbnailURL)
             .resizable()
             .scaledToFill()
+            
     }
 }
 

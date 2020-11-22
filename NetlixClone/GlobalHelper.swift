@@ -168,3 +168,15 @@ extension String {
         return size.width
     }
 }
+
+
+extension Color {
+    static let grayBack = Color("gray_back")
+    static let grayText = Color("gray_text")
+}
+
+extension View {
+    func hideKeyBoard() {
+        UIApplication.shared.sendAction(#selector(UIApplication.responds(to:)), to: nil, from: nil, for: nil)
+    }
+}
