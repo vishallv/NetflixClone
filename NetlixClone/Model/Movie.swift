@@ -31,6 +31,8 @@ struct Movie : Identifiable{
     var moreLikeThis: [Movie]
     var trailers: [Trailer]
     var genre : HomeGenre = .AllGenres
+    var previewImageName: String
+    var previewVideoURl: URL?
     var numberOfSeasonToDisplay: String {
         if let season = numberOfSeason {
             switch season {

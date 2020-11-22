@@ -83,7 +83,8 @@ let exampleMovie1 = Movie(id: UUID().uuidString,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
                           moreLikeThis: [exampleMovie2,exampleMovie3,exampleMovie4,exampleMovie5, exampleMovie6],
-                          trailers: exampleTrailers
+                          trailers: exampleTrailers, previewImageName: "whiteLinesPreview"
+                          ,previewVideoURl: exampleVideoURL
                           )
 
 let exampleMovie2 = Movie(id: UUID().uuidString,
@@ -96,7 +97,8 @@ let exampleMovie2 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
-                          moreLikeThis: [], trailers: exampleTrailers)
+                          moreLikeThis: [], trailers: exampleTrailers, previewImageName: "dirtyJohnPreview",
+                          previewVideoURl: exampleVideoURL)
 
 let exampleMovie3 = Movie(id: UUID().uuidString,
                           name: "COMMUNITY",
@@ -108,7 +110,8 @@ let exampleMovie3 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
-                          moreLikeThis: [], trailers: exampleTrailers)
+                          moreLikeThis: [], trailers: exampleTrailers, previewImageName: "ozarkPreview",
+                          previewVideoURl: exampleVideoURL)
 
 let exampleMovie4 = Movie(id: UUID().uuidString,
                           name: "ALONE",
@@ -119,7 +122,8 @@ let exampleMovie4 = Movie(id: UUID().uuidString,
                           numberOfSeason: 4, defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
-                          moreLikeThis: [], trailers: exampleTrailers)
+                          moreLikeThis: [], trailers: exampleTrailers, previewImageName: "travelersPreview",
+                          previewVideoURl: exampleVideoURL)
 
 let exampleMovie5 = Movie(id: UUID().uuidString,
                           name: "HANNIBAL",
@@ -131,7 +135,8 @@ let exampleMovie5 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
-                          moreLikeThis: [], trailers: exampleTrailers)
+                          moreLikeThis: [], trailers: exampleTrailers, previewImageName: "ozarkPreview",
+                          previewVideoURl: exampleVideoURL)
 
 let exampleMovie6 = Movie(id: UUID().uuidString,
                           name: "After Life",
@@ -143,7 +148,8 @@ let exampleMovie6 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "Baran bo Odan, Jantje Friese",
                           cast: "Louis Hofmann, Oliver Masucci, jordis Triebel",
-                          moreLikeThis: [], trailers: exampleTrailers)
+                          moreLikeThis: [], trailers: exampleTrailers, previewImageName: "ozarkPreview",
+                          previewVideoURl: exampleVideoURL)
 
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(episodeName: "Beginnings and Endings", description: "Six months after the disappearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.", season: 2, episode: 1)
