@@ -32,6 +32,6 @@ struct SearchGrid: View {
 
 struct SearchGrid_Previews: PreviewProvider {
     static var previews: some View {
-        SearchGrid(movies: trendingMovies, movieDetailToShow: .constant(nil))
+        SearchGrid(movies: generateMovies(20), movieDetailToShow: .constant(nil))
     }
 }
