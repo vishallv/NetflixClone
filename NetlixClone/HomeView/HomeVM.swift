@@ -15,12 +15,18 @@ class HomeVM: ObservableObject {
     var allCategories: [String] {
         movies.keys.map { String($0) }
     }
+    var allGenres: [HomeGenre] = [.Action,.AllGenres,.Comedy,.Horror,.Thriller]
     init() {
         setupMovies()
     }
     
-    func getMovieForCategory(category: String) -> [Movie] {
-        return movies[category] ?? []
+    func getMovieForCategory(category: String, homeRow: HomeTopRow, genre: HomeGenre) -> [Movie] {
+        switch homeRow {
+        case .home: return movies[category] ?? []
+        case .movies: return (movies[category] ?? []).filter({($0.movieType == .Movie) && ($0.genre == genre)})
+        case .tvShows: return (movies[category] ?? []).filter({($0.movieType == .tvShow) && ($0.genre == genre)})
+        case .myList: return movies[category] ?? []
+        }
     }
     
     func setupMovies() {

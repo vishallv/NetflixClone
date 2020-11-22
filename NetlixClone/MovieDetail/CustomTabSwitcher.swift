@@ -9,8 +9,11 @@ import SwiftUI
 
 struct CustomTabSwitcher: View {
     @State private var currentTab: CustomTab = .episodes
+    
     let movie: Movie
     var tabs: [CustomTab]
+    @Binding var showSeasonPicker: Bool
+    @Binding var selectedSeason: Int
     func widthForTab(_ tab: CustomTab) -> CGFloat {
         return tab.rawValue.widthOfString(withFont: .systemFont(ofSize: 20, weight: .bold))
     }
@@ -47,7 +50,7 @@ struct CustomTabSwitcher: View {
             }
             switch currentTab {
             case .episodes :
-                Text(currentTab.rawValue)
+                EpisodeView(episodes: movie.episodes ?? [], showSeasonPicker: $showSeasonPicker, selectedSeason: $selectedSeason)
             case .trailers:
                 TrailerList(trailers: movie.trailers)
             case .more:
@@ -71,8 +74,11 @@ struct CustomTabSwitcher_Previews: PreviewProvider {
         ZStack{
             Color.black
                 .ignoresSafeArea( edges: .all)
-            CustomTabSwitcher(movie:exampleMovie1, tabs: [.episodes,.trailers,.more])
+            CustomTabSwitcher(movie:exampleMovie1, tabs: [.episodes,.trailers,.more],
+                              showSeasonPicker: .constant(false),selectedSeason: .constant(1))
         }
         
     }
 }
+
+

@@ -20,6 +20,6 @@ struct SwiftUIVideoView: View {
 
 struct SwiftUIVideoView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIVideoView(url: exampleURL1)
+        SwiftUIVideoView(url: exampleVideoURL)
     }
 }

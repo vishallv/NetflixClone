@@ -28,6 +28,8 @@
 		C99C097C2569C18B002B411F /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C097B2569C18B002B411F /* SwiftUIVideoView.swift */; };
 		C99C09802569C303002B411F /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C097F2569C303002B411F /* VideoPreviewImage.swift */; };
 		C99C09842569C4D8002B411F /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C09832569C4D8002B411F /* TrailerList.swift */; };
+		C99C09882569DE15002B411F /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C09872569DE15002B411F /* EpisodeView.swift */; };
+		C99C098B256A01F2002B411F /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C098A256A01F2002B411F /* HomeStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		C99C097B2569C18B002B411F /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		C99C097F2569C303002B411F /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
 		C99C09832569C4D8002B411F /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
+		C99C09872569DE15002B411F /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
+		C99C098A256A01F2002B411F /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 			children = (
 				C99C090A2564EA4C002B411F /* HomeView.swift */,
 				C99C091D2564F318002B411F /* HomeVM.swift */,
+				C99C098A256A01F2002B411F /* HomeStack.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				C99C09742569B86E002B411F /* MoreLikeThis.swift */,
 				C99C09702569AF14002B411F /* CustomTabSwitcher.swift */,
 				C99C09832569C4D8002B411F /* TrailerList.swift */,
+				C99C09872569DE15002B411F /* EpisodeView.swift */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -259,9 +265,11 @@
 				C99C08FC2564D276002B411F /* ContentView.swift in Sources */,
 				C99C09182564ED02002B411F /* StandardHomeMovie.swift in Sources */,
 				C99C094625679290002B411F /* TopMoviePreview.swift in Sources */,
+				C99C09882569DE15002B411F /* EpisodeView.swift in Sources */,
 				C99C09142564EC53002B411F /* Movie.swift in Sources */,
 				C99C08FA2564D276002B411F /* NetlixCloneApp.swift in Sources */,
 				C99C09752569B86E002B411F /* MoreLikeThis.swift in Sources */,
+				C99C098B256A01F2002B411F /* HomeStack.swift in Sources */,
 				C99C09712569AF14002B411F /* CustomTabSwitcher.swift in Sources */,
 				C99C09842569C4D8002B411F /* TrailerList.swift in Sources */,
 				C99C094A25679D47002B411F /* SmallVerticalButton.swift in Sources */,

@@ -30,7 +30,7 @@ struct Movie : Identifiable{
     var cast: String
     var moreLikeThis: [Movie]
     var trailers: [Trailer]
-    
+    var genre : HomeGenre = .AllGenres
     var numberOfSeasonToDisplay: String {
         if let season = numberOfSeason {
             switch season {
@@ -58,7 +58,9 @@ struct Movie : Identifiable{
             return defaultEpisodeInfo.description
         }
     }
-    
+    var movieType: MovieType {
+        return episodes == nil ? .Movie : .tvShow
+    }
 }
 
 struct CurrentEpisodeInfo: Hashable, Equatable {
@@ -66,4 +68,9 @@ struct CurrentEpisodeInfo: Hashable, Equatable {
     let description: String
     let season: Int
     let episode: Int
+}
+
+enum MovieType {
+    case Movie
+    case tvShow
 }
