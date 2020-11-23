@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Movie : Identifiable{
     var id: String
@@ -33,6 +34,7 @@ struct Movie : Identifiable{
     var genre : HomeGenre = .AllGenres
     var previewImageName: String
     var previewVideoURl: URL?
+    var accentColor: Color = .white
     var numberOfSeasonToDisplay: String {
         if let season = numberOfSeason {
             switch season {

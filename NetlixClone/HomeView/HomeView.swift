@@ -16,6 +16,10 @@ struct HomeView: View {
     @State private var showGenreSelection: Bool = false
     @State private var showTopRowSelection: Bool = false
     
+    @Binding  var currentIndex: Int
+    @Binding  var isVisible: Bool
+//    @Binding  var currentPOS: CGFloat
+    
     let screen = UIScreen.main.bounds
     var body: some View {
         ZStack {
@@ -33,7 +37,8 @@ struct HomeView: View {
                         .frame(width: screen.width)
                         .padding(.top,-100)
                         .zIndex(-1)
-                    MoviePreviewRow(movies: trendingMovies)
+                    MoviePreviewRow(movies: trendingMovies,currentIndex: $currentIndex,
+                                    isVisible: $isVisible)
                     HomeStack(homeVM: homeVM, movieDetailToShow: $movieDetailToShow, genre: $homeGenre, topRowSelection: topRowSelection)
                 }
             }
@@ -138,7 +143,7 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(currentIndex: .constant(0), isVisible: .constant(false))
     }
 }
 

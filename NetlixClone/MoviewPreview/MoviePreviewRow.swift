@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MoviePreviewRow: View {
     var movies: [Movie]
+    @Binding  var currentIndex: Int
+    @Binding  var isVisible: Bool
     var body: some View {
         
         VStack(alignment: .leading) {
@@ -27,6 +29,10 @@ struct MoviePreviewRow: View {
                             .frame(width: 120,height: 120)
                             .padding(.trailing,14)
                             .padding(.leading, 6)
+                            .onTapGesture {
+                                currentIndex = index
+                                isVisible = true
+                            }
                     }
                 }
             }
@@ -40,7 +46,7 @@ struct MoviePreviewRow_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Color.black
-            MoviePreviewRow(movies: trendingMovies)
+            MoviePreviewRow(movies: trendingMovies, currentIndex: .constant(0),isVisible: .constant(false))
                 
         }
     }

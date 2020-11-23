@@ -46,6 +46,11 @@
 		C99C09CF256B1363002B411F /* MoviewPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C09CE256B1363002B411F /* MoviewPreviewCell.swift */; };
 		C99C09D3256B1662002B411F /* MoviePreviewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C09D2256B1662002B411F /* MoviePreviewRow.swift */; };
 		C99C09D6256B1C09002B411F /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C09D5256B1C09002B411F /* PagerView.swift */; };
+		C99C09DA256B2CDC002B411F /* VideoPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = C99C09D9256B2CDC002B411F /* VideoPlayer */; };
+		C99C09DD256B2D17002B411F /* TrailerPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C09DC256B2D17002B411F /* TrailerPlayerView.swift */; };
+		C99C09E0256B2FB6002B411F /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C09DF256B2FB6002B411F /* PreviewView.swift */; };
+		C99C09E3256B3031002B411F /* PreviewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C09E2256B3031002B411F /* PreviewVM.swift */; };
+		C99C09E6256B38DF002B411F /* PreviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C09E5256B38DF002B411F /* PreviewList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +94,10 @@
 		C99C09CE256B1363002B411F /* MoviewPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviewPreviewCell.swift; sourceTree = "<group>"; };
 		C99C09D2256B1662002B411F /* MoviePreviewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePreviewRow.swift; sourceTree = "<group>"; };
 		C99C09D5256B1C09002B411F /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
+		C99C09DC256B2D17002B411F /* TrailerPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerPlayerView.swift; sourceTree = "<group>"; };
+		C99C09DF256B2FB6002B411F /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		C99C09E2256B3031002B411F /* PreviewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVM.swift; sourceTree = "<group>"; };
+		C99C09E5256B38DF002B411F /* PreviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C99C09102564EBEC002B411F /* KingfisherSwiftUI in Frameworks */,
+				C99C09DA256B2CDC002B411F /* VideoPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +267,10 @@
 				C99C09CE256B1363002B411F /* MoviewPreviewCell.swift */,
 				C99C09D2256B1662002B411F /* MoviePreviewRow.swift */,
 				C99C09D5256B1C09002B411F /* PagerView.swift */,
+				C99C09DC256B2D17002B411F /* TrailerPlayerView.swift */,
+				C99C09DF256B2FB6002B411F /* PreviewView.swift */,
+				C99C09E2256B3031002B411F /* PreviewVM.swift */,
+				C99C09E5256B38DF002B411F /* PreviewList.swift */,
 			);
 			path = MoviewPreview;
 			sourceTree = "<group>";
@@ -279,6 +293,7 @@
 			name = NetlixClone;
 			packageProductDependencies = (
 				C99C090F2564EBEC002B411F /* KingfisherSwiftUI */,
+				C99C09D9256B2CDC002B411F /* VideoPlayer */,
 			);
 			productName = NetlixClone;
 			productReference = C99C08F62564D276002B411F /* NetlixClone.app */;
@@ -309,6 +324,7 @@
 			mainGroup = C99C08ED2564D276002B411F;
 			packageReferences = (
 				C99C090E2564EBEC002B411F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C99C09D8256B2CDC002B411F /* XCRemoteSwiftPackageReference "VideoPlayer" */,
 			);
 			productRefGroup = C99C08F72564D276002B411F /* Products */;
 			projectDirPath = "";
@@ -343,11 +359,15 @@
 				C99C090B2564EA4C002B411F /* HomeView.swift in Sources */,
 				C99C09A2256A5821002B411F /* PopularMovies.swift in Sources */,
 				C99C091E2564F318002B411F /* HomeVM.swift in Sources */,
+				C99C09E0256B2FB6002B411F /* PreviewView.swift in Sources */,
+				C99C09E3256B3031002B411F /* PreviewVM.swift in Sources */,
 				C99C09C6256AFC96002B411F /* DownloadView.swift in Sources */,
+				C99C09E6256B38DF002B411F /* PreviewList.swift in Sources */,
 				C99C099F256A5128002B411F /* GenerateMovies.swift in Sources */,
 				C99C09C0256AF795002B411F /* TrackableScrollView.swift in Sources */,
 				C99C09802569C303002B411F /* VideoPreviewImage.swift in Sources */,
 				C99C098F256A1F28002B411F /* SearchBar.swift in Sources */,
+				C99C09DD256B2D17002B411F /* TrailerPlayerView.swift in Sources */,
 				C99C08FC2564D276002B411F /* ContentView.swift in Sources */,
 				C99C09BA256AF176002B411F /* ComingSoonRow.swift in Sources */,
 				C99C09B3256AED78002B411F /* ComingSoonView.swift in Sources */,
@@ -570,6 +590,14 @@
 				version = 5.14.1;
 			};
 		};
+		C99C09D8256B2CDC002B411F /* XCRemoteSwiftPackageReference "VideoPlayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wxxsw/VideoPlayer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -577,6 +605,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C99C090E2564EBEC002B411F /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = KingfisherSwiftUI;
+		};
+		C99C09D9256B2CDC002B411F /* VideoPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C99C09D8256B2CDC002B411F /* XCRemoteSwiftPackageReference "VideoPlayer" */;
+			productName = VideoPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
